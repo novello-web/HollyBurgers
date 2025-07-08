@@ -1,0 +1,102 @@
+/* Estilos base */
+body {
+  background-image: url(logoprime.png);
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #000;
+  text-shadow: 0 0 20px #f1f1f1;
+}
+
+/* Tarjetas principales */
+.card-carta,
+.card-combos {
+  box-shadow: 0 0 15px 0 #0005;
+  border-left: 3px solid #f5da42;
+  border-bottom: 3px solid #f5da42;
+  border-radius: 1.2rem;
+  background-color: #f1f1f1;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Botón */
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f4c542;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+a:hover {
+  background-color: #e0b509;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 30rem;
+    background-position: top center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .card-carta,
+  .card-combos {
+    padding: 1.5rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .card-carta,
+  .card-combos {
+    width: 70%;
+    padding: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

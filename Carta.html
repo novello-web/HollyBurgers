@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Burgers</title>
+  <link rel="stylesheet" href="Carta.css" />
+  <link rel="icon" href="download-removebg-preview.png" type="image/png">
+</head>
+<body>
+  <button id="btn-volver" class="volver">Volver</button>
+  <div>
+<h1>HOLLY<span class="titulo-holly">Burgers</span></h1>
+</div>
+  <div class="highlight">TODAS NUESTRAS BURGUERS VIENEN CON PAPAS🍟</div>
+
+  <div class="item">
+    <h3>CLASSIC</h3>
+     <img src="classic.png" alt="Classic Burger" class="imagen-burger">
+    <div class="burger">
+      <div class="item-title">SIMPLE <span class="precio">$8700</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, cebolla cortada brunoise, lechuga, tomate, 2 cheddar y medallón de carne cocida con manteca, mayonesa holly tasty.</div>
+      <button>✚</button>
+    </div>
+    <div class="burger">
+      <div class="item-title">DOBLE <span class="precio">$10400</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, cebolla cortada brunoise, lechuga, tomate, 4 cheddar y 2 medallónes de carne cocida con manteca, mayonesa holly tasty.</div>
+      <button>✚</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>CRISPY</h3>
+  <img src="cryspy.png" alt="Crispy Burger" class="imagen-burger">
+    <div class="burger">
+      <div class="item-title">SIMPLE <span class="precio">$8700</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, cebolla cryspy, panceta ahumada, tomate, 2 cheddar y medallón de carne cocida con manteca, mayonesa holly tasty.</div>
+      <button>✚</button>
+    </div>
+    <div class="burger">
+      <div class="item-title">DOBLE <span class="precio">$10400</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, cebolla cryspy,2 tiras de panceta ahumada, tomate, 4 cheddar y 2 medallónes de carne cocida con manteca, mayonesa holly tasty.</div>
+      <button>✚</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>HOLLY</h3>
+    <img src="Holly.png" alt="Holly Burger" class="imagen-burger"> 
+    <div class="burger">
+      <div class="item-title">SIMPLE<span class="precio">$8700</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, aderezo doble holly, cebolla cortada brunoise, 2 rodajas de pepinillos, tomate, 2 cheddar y medallón de carne cocida con manteca.</div>
+      <button>✚</button>
+    </div>
+    <div class="burger">
+      <div class="item-title">DOBLE<span class="precio">$10400</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, aderezo doble holly, cebolla cortada brunoise, 2 rodajas de pepinillos, tomate, 4 cheddar y 2 medallónes de carne cocida con manteca.</div>
+      <button>✚</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>CHEESE BURGER</h3>
+    <img src="cheese.png" alt="Cheese Burger" class="imagen-burger">
+    <div class="burger">
+      <div class="item-title">SIMPLE<span class="precio">$8700</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, ketchup, mayonesa, cebolla cortada brunoise, 2 cheddar y medallón de carne cocida con manteca.</div>
+      <button>✚</button>
+    </div>
+    <div class="burger">
+      <div class="item-title">DOBLE<span class="precio">$10400</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, ketchup, mayonesa, cebolla cortada brunoise, 4 cheddar y 2 medallónes de carne cocida con manteca.</div>
+      <button>✚</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>OKLAHOMA</h3>
+    <img src="Oclahoma.png" alt="Cheese Burger" class="imagen-burger">
+    <div class="burger">
+      <div class="item-title">SIMPLE<span class="precio">$8700</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, ketchup, mayonesa, cebolla corte Juliana smasheada en la plancha, 2 cheddar, medallón de carne cocida con manteca y mayonesa ahumada holly.</div>
+      <button>✚</button>
+    </div>
+    <div class="burger">
+      <div class="item-title">DOBLE<span class="precio">$10400</span></div>
+      <div class="item-desc">Pan Enmantecado y tostado, ketchup, mayonesa, cebolla corte Juliana smasheada en la plancha, 4 cheddar, 2 medallónes de carne cocida con manteca y mayonesa ahumada holly.</div>
+      <button>✚</button>
+    </div>
+  </div>
+
+  <!-- Modal del carrito -->
+  <div id="modal-carrito" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <h2>🛒 Tu pedido:</h2>
+      <div class="card-carrito">
+      <ul id="lista-carrito"></ul> 
+      </div>
+      <p><strong>Total: $</strong><strong id="total-carrito">0</strong></p>
+      <button id="hacer-pedido">Hacer pedido</button> 
+    </div>
+
+  </div>
+  <div id="toast" class="toast">Agregado al carrito ✅</div>
+  <!-- Botón para mostrar modal del carrito -->
+<button id="ver-carrito" class="boton-carrito">
+  Ver pedido <span id="contador-items" style="display: none;">0</span>
+</button>
+
+
+  <script src="carta.js"></script>
+</body>
+</html>

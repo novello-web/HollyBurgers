@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Combos</title>
+  <link rel="stylesheet" href="combos.css" />
+  <link rel="icon" href="download-removebg-preview.png" type="image/png">
+</head>
+<body>
+  <button id="btn-volver" class="volver">Volver</button>
+  <div class="combo-section">
+    <div class="combo-box">
+      <h1>HOLLY <span>Burgers</span></h1>
+      <hr>
+      <ul>
+        <li><strong>HOLLY SIMPLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$10300</span></li>
+      <button>✚</button>
+        <br>
+        <li><strong>HOLLY DOBLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$12000</span></li>
+      <button>✚</button>
+      </ul>
+      <img src="Holly.png" alt="Holly Burger" class="imagen-burger">
+    </div>
+
+    <div class="combo-box">
+      <h1>HOLLY <span>Burgers</span></h1>
+      <hr>
+        <li><strong>CLASSIC SIMPLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$10300</span></li>
+      <button>✚</button>
+        <br>
+        <li><strong>CLASSIC DOBLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$12000</span></li>
+      <button>✚</button>
+      </ul>
+      <div>
+      <img src="classic.png" alt="Classic Burger" class="imagen-burger">
+      </div>
+    </div>
+
+    <div class="combo-box">
+      <h1>HOLLY <span>Burgers</span></h1>
+      <hr>
+        <li><strong>CHEESE SIMPLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$10300</span></li>
+      <button>✚</button>
+        <br>
+        <li><strong>CHEESE DOBLE COMBO</strong></li>
+        <li>+ 1 LATA DE GASEOSA</li>
+        <li>+ 1 PAPAS <span>$12000</span></li>
+      <button>✚</button>
+      </ul>
+      <div>
+      <img src="cheese.png" alt="Cheese Burger" class="imagen-burger">
+      </div>
+    </div>
+  </div>
+    <!-- Modal del carrito -->
+  <div id="modal-carrito" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <h2>🛒 Tu pedido:</h2>
+      <div class="card-carrito">
+      <ul id="lista-carrito"></ul> 
+      </div>
+      <p><strong>Total: $</strong><strong id="total-carrito">0</strong></p>
+      <button id="hacer-pedido" class="hacer-pedido">Hacer pedido</button> 
+    </div>
+
+  </div>
+  <div id="toast" class="toast">Agregado al carrito ✅</div>
+    <!-- Botón para mostrar modal del carrito -->
+<button id="ver-carrito" class="boton-carrito">
+  Ver pedido <span id="contador-items" style="display: none;">0</span>
+</button>
+
+    <script src="combos.js"></script>
+</body>
+</html>
