@@ -1,13 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(#f2f2f2, #d9d9d9);
-  color: #ccc;
+  background-color: #ccc;
   margin: 0;
-  padding: 2rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 h1, .titulo-holly {
